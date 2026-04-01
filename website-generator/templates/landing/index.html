@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo">{{TITLE}}</span>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>{{TITLE}}</h1>
+    <p>{{DESCRIPTION}}</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Optimized for performance from day one.</p>
+      </div>
+      <div class="card">
+        <h3>Simple</h3>
+        <p>Easy to use with a clean, intuitive design.</p>
+      </div>
+      <div class="card">
+        <h3>Reliable</h3>
+        <p>Built to last with modern best practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea placeholder="Your message" rows="4" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 {{AUTHOR}}. All rights reserved.</p>
+  </footer>
+</body>
+</html>

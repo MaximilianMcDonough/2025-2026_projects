@@ -1,0 +1,43 @@
+:root { --color: {{COLOR}}; --text: #1f2937; --bg: #f9fafb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+
+nav {
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: 1rem 2rem; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  position: sticky; top: 0;
+}
+nav .logo { font-weight: 700; color: var(--color); margin-right: auto; }
+nav a { color: var(--text); text-decoration: none; }
+nav a:hover { color: var(--color); }
+
+.hero {
+  text-align: center; padding: 5rem 2rem;
+  background: #fff; border-bottom: 1px solid #e5e7eb;
+}
+.avatar {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: var(--color); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 700; margin-bottom: 1.5rem;
+  overflow: hidden; text-align: center; padding: 0.5rem;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.hero p { color: #6b7280; max-width: 480px; margin: 0 auto; }
+
+section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+section h2 { font-size: 1.75rem; margin-bottom: 1.5rem; color: var(--color); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
+.project-card {
+  background: #fff; border-radius: 0.75rem; padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.project-card h3 { margin-bottom: 0.5rem; }
+.project-card p { color: #6b7280; font-size: 0.9rem; margin-bottom: 1rem; }
+.project-card a { color: var(--color); text-decoration: none; font-weight: 600; }
+
+.contact { text-align: center; }
+.contact a { color: var(--color); }
+
+footer { text-align: center; padding: 2rem; color: #9ca3af; font-size: 0.85rem; }
